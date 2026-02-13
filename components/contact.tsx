@@ -26,7 +26,7 @@ export function Contact() {
     {
       icon: MapPin,
       title: "Address",
-      details: "D0011, Akshar Business Park, Sector 25, Navi Mumbai, Maharashtra, India - 400703",
+      details: "D0011, Akshar Business Park, Sector 25,Vashi, Navi Mumbai, Maharashtra, India - 400703",
       link: null,
     },
     {
@@ -153,7 +153,7 @@ export function Contact() {
           {/* Right: Contact form */}
           <Card className="border-2 border-gray-100 rounded-xl shadow-lg">
             <CardContent className="p-6 sm:p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/info@carmineagroexports.com" method="POST" className="space-y-6">
                 <div className="space-y-2">
                   <label
                     htmlFor="name"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Leaf, Facebook, Linkedin, Twitter, Mail, Phone } from "lucide-react";
 
@@ -9,17 +10,17 @@ export function Footer() {
       { label: "Our Products", href: "#products" },
       { label: "Contact Us", href: "#contact" },
     ],
-    legal: [
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
-      { label: "Disclaimer", href: "/disclaimer" },
-      { label: "Cookie Policy", href: "/cookies" },
-    ],
-    resources: [
-      { label: "Product Catalog", href: "/catalog" },
-      { label: "Quality Standards", href: "/quality" },
-      { label: "Shipping Info", href: "/shipping" },
-    ],
+    // legal: [
+    //   { label: "Privacy Policy", href: "/privacy" },
+    //   { label: "Terms of Service", href: "/terms" },
+    //   { label: "Disclaimer", href: "/disclaimer" },
+    //   { label: "Cookie Policy", href: "/cookies" },
+    // ],
+    // resources: [
+    //   { label: "Product Catalog", href: "/catalog" },
+    //   { label: "Quality Standards", href: "/quality" },
+    //   { label: "Shipping Info", href: "/shipping" },
+    // ],
   };
 
   const socialLinks = [
@@ -33,16 +34,13 @@ export function Footer() {
       <div className="container mx-auto px-4">
         {/* Main footer content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Brand column */}
             <div className="lg:col-span-2 space-y-6">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-xl">
-                  <Leaf className="h-6 w-6 text-white" />
-                </div>
-                <span className="font-bold text-xl text-white">
-                  Carmine Agro Exports
-                </span>
+              <Link href="/" className="flex items-center gap-3 font-bold text-xl">
+                <Image src="/logo.png" alt="Carmine Agro Exports" width={130} height={90} className="rounded-xl object-cover" />
+                <span className="hidden sm:inline">Carmine Agro Exports</span>
+                <span className="sm:hidden">Carmine</span>
               </Link>
               <p className="text-gray-400 leading-relaxed max-w-md">
                 India-based agro trading and export company specializing in quality 
@@ -84,7 +82,7 @@ export function Footer() {
             </div>
 
             {/* Legal links */}
-            <div>
+            {/* <div>
               <h3 className="font-semibold text-white mb-4">Legal</h3>
               <ul className="space-y-3">
                 {footerLinks.legal.map((link) => (
@@ -98,10 +96,10 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Resources */}
-            <div>
+            {/* <div>
               <h3 className="font-semibold text-white mb-4">Resources</h3>
               <ul className="space-y-3">
                 {footerLinks.resources.map((link) => (
@@ -115,7 +113,7 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 

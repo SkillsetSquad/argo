@@ -60,9 +60,9 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button className="bg-emerald-600 hover:bg-emerald-700 rounded-xl">
+            {/* <Button className="bg-emerald-600 hover:bg-emerald-700 rounded-xl">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Navigation */}
