@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Wheat, Truck, Leaf, Download } from "lucide-react";
+import { Wheat, Truck, Leaf, Download, Sprout } from "lucide-react";
 
 export function Products() {
   const products = [
@@ -31,6 +31,14 @@ export function Products() {
       items: ["Fresh Onions", "Fresh Potatoes", "Fresh Ginger"],
       color: "bg-green-100",
       iconColor: "text-green-600",
+    },
+
+     {
+      icon: Sprout,
+      title: "Oilseeds",
+      items: ["Groundnut", "Sesame seeds",],
+      color: "bg-orange-100",
+      iconColor: "text-orange-600",
     },
   ];
 

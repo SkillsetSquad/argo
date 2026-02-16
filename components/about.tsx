@@ -9,7 +9,7 @@ export function About() {
     "Loading & logistics coordination",
   ];
 
-  const countries = ["UAE", "KSA", "India", "Africa", "Southeast Asia"];
+  const countries = ["UAE", "KSA", "Africa", "Southeast Asia"];
 
   return (
     <section id="about" className="py-20 md:py-32 bg-gray-50">
